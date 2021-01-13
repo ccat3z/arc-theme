@@ -841,7 +841,7 @@ StScrollBar {
   }
 
   #panelLeft, #panelCenter { // spacing between activities<>app menu and such
-    spacing: 8px;
+    spacing: 0px;
   }
 
   .panel-corner {
@@ -982,7 +982,7 @@ StScrollBar {
 // a little unstructured mess:
 
 #appMenu {
-  spacing: 4px;
+  spacing: 0px;
   padding: 0 8px;
 
   .label-shadow { color: transparent; }
