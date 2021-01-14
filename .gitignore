@@ -6,6 +6,7 @@ build-aux
 compile
 config.*
 configure
+configure~
 install-sh
 missing
 common/cinnamon/**/cinnamon-dark.css
