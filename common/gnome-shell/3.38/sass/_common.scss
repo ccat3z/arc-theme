@@ -577,10 +577,10 @@ StScrollBar {
 
 .popup-separator-menu-item-separator {
   //-margin-horizontal: 24px;
-  height: 2px; //not really the whole box
-  margin: 0;
-  background-color: transparent;
-  border: none;
+  height: 1px; //not really the whole box
+  margin: 0 50px;
+  background-color: transparentize($_panel_fg_color, 0.8);
+  // border: none;
 }
 
 // Rename popup
