@@ -862,8 +862,9 @@ StScrollBar {
   }
 
   .panel-button {
-    -natural-hpadding: 10px;
-    -minimum-hpadding: 6px;
+    $_panel_button_space: 12px;
+    -natural-hpadding: $_panel_button_space / 2;
+    -minimum-hpadding: $_panel_button_space / 2;
     font-weight: bold;
     color: $_panel_fg_color;
     text-shadow: none;
@@ -906,7 +907,7 @@ StScrollBar {
       & > .system-status-icon { icon-shadow: none; }
     }
 
-    .system-status-icon { icon-size: 16px; padding: 0 4px; }
+    .system-status-icon { icon-size: 16px; padding: 0; }
 
     &.clock-display {
       // Move highlight from .panel-button to .clock
@@ -931,19 +932,21 @@ StScrollBar {
         margin: 0 4px;
       }
     }
+
+    .panel-status-menu-box {
+      spacing: $_panel_button_space;
+    }
+
+    .panel-status-indicators-box {
+      spacing: $_panel_button_space;
+        // spacing between power icon and (optional) percentage label
+        &.power-status {
+          spacing: $_panel_button_space / 2;
+        }
+    }
   }
 
   #panelActivities.panel-button { -natural-hpadding: 12px; }
-
-  .panel-status-indicators-box,
-  .panel-status-menu-box {
-    spacing: 2px;
-  }
-
-  // spacing between power icon and (optional) percentage label
-  .power-status.panel-status-indicators-box {
-    spacing: 0;
-  }
 
   .screencast-indicator { color: $error_color; }
 
