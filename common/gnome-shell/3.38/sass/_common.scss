@@ -913,6 +913,8 @@ StScrollBar {
       // Move highlight from .panel-button to .clock
       background: transparent;
       border-bottom-width: 0;
+      -natural-hpadding: 0;
+      -minimum-hpadding: 0;
 
       .clock {
         @extend .panel-button;
